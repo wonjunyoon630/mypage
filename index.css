@@ -1,3 +1,7 @@
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 .header-nav{
     display: flex;
     float: right;
@@ -6,6 +10,11 @@
     background-color: gray;
     color:blue;
     font-size: 20px;
+    margin-right: 100px;
+    height: 100%;
+    box-sizing:border-box; /* 기본값은 컨텐츠 값으로 되어있어 박스값으로 바꿔줌*/
+    margin-top: 15px;
+    line-height: 30px;
 }
 ul {
     list-style: none;
@@ -15,8 +24,7 @@ ul {
     margin-right:10px; ;
 }
 #container{
-    width: 1050px;
-    margin: 0 auto;
+    position: relative;
 }
 .header-right-nav{
     display: flex;
@@ -26,9 +34,76 @@ ul {
     background-color: gray;
     color:blue;
     font-size: 20px;
+    margin-left: 100px;
+    height: 100%;
+    box-sizing:border-box;
+    margin-top: 15px;
+    line-height: 30px;
 }
 .header-right-nav li{
     margin-right:10px ;
 }
+#header {
+    height: 100px;
+    border-bottom: 1px solid black;
+    min-width: 1050px;
+    background-color: #c7cfb8;
+}
+#nav{
+    height: 30px;
+    position: relative;
+}
 
 
+
+/* header 끝 -----------------------------------------------------------*/
+
+/* main 시작 -----------------------------------------------------------*/
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 600px;
+}
+.main-image{
+    height: 100%;
+    height: 100%;
+    background-color: #333332;
+}
+.main-title{
+    color: #fff;
+    ;
+    text-align: center;
+    line-height: 7;   
+}
+.title-font{
+    font-size: 80px;
+}
+#about-me{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    border-bottom:1px solid black ;
+}
+.about-me-font{
+    font-size: 40px;
+}
+.about-me-content-font{
+    font-size: 40px;
+}
+.about-me-title{
+    margin: 140px 100px 0px 100px;
+}
+.about-me-content{
+    margin:100px 100px 0px 100px;
+}
+.small-font{
+    font-size: 15px;
+}
+#skill{
+    width: 100%;
+    height: 200px;
+}
