@@ -2,19 +2,13 @@ body {
     font-family: 'Do Hyeon', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.header-nav{
-    display: flex;
-    float: right;
-    border: 1px solid black;
-    padding: 0px 0px 0px 10px;
-    background-color: gray;
-    color:blue;
-    font-size: 20px;
-    margin-right: 100px;
-    height: 100%;
-    box-sizing:border-box; /* 기본값은 컨텐츠 값으로 되어있어 박스값으로 바꿔줌*/
-    margin-top: 15px;
-    line-height: 30px;
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 ul {
     list-style: none;
@@ -28,16 +22,15 @@ ul {
 }
 .header-right-nav{
     display: flex;
-    float: left;
+    float:left;
     border:1px solid black;
     padding:0px 0px 0px 10px;
     background-color: gray;
-    color:blue;
+    color:white;
     font-size: 20px;
-    margin-left: 100px;
     height: 100%;
     box-sizing:border-box;
-    margin-top: 15px;
+    margin: 30px 0px 0px 100px ;
     line-height: 30px;
 }
 .header-right-nav li{
@@ -53,7 +46,16 @@ ul {
     height: 30px;
     position: relative;
 }
-
+.header-nav-menu{
+    background-image: url(./menu-icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    display: flex;
+    float: right;
+    margin: 20px 100px 0 0;
+    background-repeat: no-repeat;
+}
 
 
 /* header 끝 -----------------------------------------------------------*/
@@ -63,6 +65,7 @@ ul {
     width: 100%;
     height: 100%;
     position: relative;
+    
 }
 #content{
     width: 100%;
@@ -72,6 +75,7 @@ ul {
     height: 100%;
     height: 100%;
     background-color: #333332;
+    position: relative;
 }
 .main-title{
     color: #fff;
@@ -87,6 +91,7 @@ ul {
     height: 320px;
     display: flex;
     border-bottom:1px solid black ;
+    background-color: #d1e3c3;
 }
 .about-me-font{
     font-size: 40px;
@@ -98,7 +103,10 @@ ul {
     margin: 140px 100px 0px 100px;
 }
 .about-me-content{
-    margin:100px 100px 0px 100px;
+    margin:50px 100px 50px 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 300px 0px 20px;
 }
 .small-font{
     font-size: 15px;
@@ -106,4 +114,34 @@ ul {
 #skill{
     width: 100%;
     height: 200px;
+}
+.icon-align{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display:flex;
+}
+.icon-align-instagram{
+    background-image: url(./instagram.png);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    display: flex;
+    float: right;
+    margin: 0px 5px 5px 10px;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.icon-align-facebook{
+    background-image: url(./facebook.png);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    display: flex;
+    float: right;
+    margin: 0px 5px 5px 10px;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    overflow: hidden;
 }
