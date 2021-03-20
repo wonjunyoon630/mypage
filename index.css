@@ -48,7 +48,7 @@ ul {
     position: relative;
 }
 .header-nav-menu{
-    background-image: url(./menu-icon.png);
+    background-image: url(./img/menu-icon.png);
     width: 60px;
     height: 60px;
     background-size: contain;
@@ -123,7 +123,7 @@ ul {
     display:flex;
 }
 .icon-align-instagram{
-    background-image: url(./instagram.png);
+    background-image: url(./img/instagram.png);
     width: 60px;
     height: 60px;
     background-size: contain;
@@ -135,7 +135,7 @@ ul {
     overflow: hidden;
 }
 .icon-align-facebook{
-    background-image: url(./facebook.png);
+    background-image: url(./img/facebook.png);
     width: 60px;
     height: 60px;
     background-size: contain;
