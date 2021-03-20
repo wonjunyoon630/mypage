@@ -2,6 +2,11 @@ body {
     font-family: 'Do Hyeon', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
 }
+a{
+    text-decoration: none;
+    color:#000;
+    font-size: 25px;
+}
 .blind{
     position: absolute;
     clip: rect(0 0 0 0);
@@ -15,47 +20,65 @@ ul {
     
 }
 .header-nav li{ 
-    margin-right:10px; ;
+    margin-right:10px; 
 }
 #container{
     position: relative;
 }
-.header-right-nav{
-    display: flex;
-    float:left;
-    border:1px solid black;
-    padding:0px 0px 0px 10px;
-    background-color: gray;
-    color:white;
-    font-size: 20px;
-    height: 100%;
-    box-sizing:border-box;
-    margin: 30px 0px 0px 100px ;
-    line-height: 30px;
-}
-.header-right-nav li{
-    margin-right:10px ;
-}
 #header {
     z-index: 100; /*최소값은 -1~ 9999*/
-    height: 100px;
-    border-bottom: 1px solid black;
+    height: 60px;
     min-width: 1050px;
-    background-color: #c7cfb8;
+    background-color: rgba( 255, 255, 255, 0.3 );
 }
 #nav{
-    height: 30px;
+    height: 100%;
     position: relative;
+    margin: 0px 220px;
 }
-.header-nav-menu{
-    background-image: url(./img/menu-icon.png);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
+.header-nav-left{
+    display: flex;
+    float: left;
+    width: 150px;
+    height: 100%;
+    margin:0 auto;
+    font-size: 23px;
+}
+.header-nav-right{
     display: flex;
     float: right;
-    margin: 20px 100px 0 0;
-    background-repeat: no-repeat;
+    width: 474px;
+    height: 100%;
+    font-size: 23px;
+}
+.header-nav-right ul{
+    margin: 5px auto;
+    padding: 15px 0;
+    text-align: center;
+    
+}
+.header-nav-right li{
+    display: inline-block;
+    padding:0 15px;
+}
+.header-nav-left a{
+    margin: 5px auto ;
+    padding: 15px 0;
+    opacity: 1;
+}
+.header-nav-right{
+    opacity: 1;
+}
+
+
+.header-menu{
+    position:absolute;
+    top:0;
+    right: 0;
+}
+.header-menu li {
+    display: flex;
+    float: left;
 }
 
 
@@ -66,16 +89,17 @@ ul {
     width: 100%;
     height: 100%;
     position: relative;
-    
 }
 #content{
     width: 100%;
-    height: 600px;
+    height: 692px;
 }
 .main-image{
+    width: 100%;
     height: 100%;
-    height: 100%;
-    background-color: #333332;
+    background: url(./img/저녁이미지.jpg);
+    background-repeat: no-repeat;
+    background-size:1519px 754px;
     position: relative;
 }
 .main-title{
@@ -87,35 +111,66 @@ ul {
 .title-font{
     font-size: 80px;
 }
-#about-me,#project{
+#about-me{
     width: 100%;
-    height: 320px;
+    height: 693px;
     display: flex;
     border-bottom:1px solid black ;
     background-color: #d1e3c3;
 }
-.about-me-font,.project-font{
+#skill{
+    width: 100%;
+    height: 693px;
+    border-bottom:1px solid black ;
+    background-color: #d1e3c3;
+}
+.about-me-font,.skill-font{
     font-size: 40px;
 }
-.about-me-content-font,.project-content-font{
+
+.about-me-content-font{
     font-size: 40px;
+    text-align: center;
+    padding: 85px;
 }
-.about-me-title,.project-title{
-    margin: 140px 100px 0px 100px;
+.about-me-title{
+    border-right: 1px solid black;
+    width:480px;;
 }
-.about-me-content,.project-content{
+.skill-title{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin:0;
+    text-align: center;
+}
+.about-me-content{
     margin:50px 100px 50px 100px;
     border: 1px solid black;
     border-radius: 20px;
     padding: 20px 300px 0px 20px;
 }
+.about-me-content{
+    height: 200px;
+
+}
+.about-me-img{
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.about-me-img img{
+    border-radius: 250px;
+    width: 100%;
+    height: 100%;
+}
 .small-font{
     font-size: 15px;
 }
-#skill{
-    width: 100%;
-    height: 200px;
-}
+
 .icon-align{
     position: absolute;
     right: 0px;
@@ -145,4 +200,39 @@ ul {
     background-repeat: no-repeat;
     text-indent: 100%;
     overflow: hidden;
+}
+
+.about-me-idc{
+    width: 376px;
+    height: 100%;
+    font-size: 21px;
+    padding: 0px 50px;
+}
+.about-me-idc span{
+    display: block;
+    margin-bottom: 20px;
+}
+.skill-content{
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+}
+.skill-area{
+    float: left;
+    width: 500px;
+    height: 450px;
+    
+}
+.skill-content .skill-area img{
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    
+}
+.skill-text{
+    padding: 55px;
+    font-size: 40px;
 }
