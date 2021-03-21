@@ -120,7 +120,7 @@ ul {
 }
 #skill{
     width: 100%;
-    height: 693px;
+    height: 722px;
     border-bottom:1px solid black ;
     background-color: #d1e3c3;
 }
@@ -235,4 +235,43 @@ ul {
 .skill-text{
     padding: 55px;
     font-size: 40px;
+}
+
+#project{
+    width: 100%;
+    height: 722px;
+    border-bottom:1px solid black ;
+    background-color:white;  
+}
+.project-title{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.project-font{
+    font-size: 40px;
+}
+.project-content{
+    margin: 0 140px;
+    text-align: center;
+}
+.project-content div{
+    width: 26%;
+    height:40%;
+    display: inline-block;
+    border: 1px solid #ddd;;
+    margin: 20px 40px;
+    
+}
+.project-content div img{
+    width: 94%;
+    height: auto;
+   padding: 10px;
+}
+.project-content div span{
+    width: 100%;
+    display: inline-block;
+    background-color: #455c82;
+    padding: 2px;
 }
