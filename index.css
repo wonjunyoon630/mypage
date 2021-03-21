@@ -32,6 +32,7 @@ ul {
     background-color: rgba( 255, 255, 255, 0.3 );
 }
 #nav{
+    min-width: 1050px;
     height: 100%;
     position: relative;
     margin: 0px 220px;
@@ -86,13 +87,13 @@ ul {
 
 /* main 시작 -----------------------------------------------------------*/
 #main{
-    width: 100%;
+    min-width: 1050px;
     height: 100%;
     position: relative;
 }
 #content{
-    width: 100%;
-    height: 692px;
+    min-width: 1050px;
+    height: 722px;
 }
 .main-image{
     width: 100%;
@@ -112,14 +113,14 @@ ul {
     font-size: 80px;
 }
 #about-me{
-    width: 100%;
-    height: 693px;
+    min-width: 1050px;
+    height: 722px;
     display: flex;
     border-bottom:1px solid black ;
     background-color: #d1e3c3;
 }
 #skill{
-    width: 100%;
+    min-width: 1050px;
     height: 722px;
     border-bottom:1px solid black ;
     background-color: #d1e3c3;
@@ -127,13 +128,15 @@ ul {
 .about-me-font,.skill-font{
     font-size: 40px;
 }
-
+.about-me-right{
+    width: 100%;
+}
 .about-me-content-font{
     font-size: 40px;
     text-align: center;
     padding: 85px;
 }
-.about-me-title{
+.about-me-left{
     border-right: 1px solid black;
     width:480px;;
 }
@@ -147,12 +150,11 @@ ul {
     margin:50px 100px 50px 100px;
     border: 1px solid black;
     border-radius: 20px;
-    padding: 20px 300px 0px 20px;
-}
-.about-me-content{
+    padding: 20px 300px 0px 20px; 
+    width: 50%;
     height: 200px;
-
 }
+
 .about-me-img{
     border-radius: 250px;
     width: 250px;
@@ -215,12 +217,12 @@ ul {
 .skill-content{
     text-align: center;
     margin-top: 100px;
-    width: 100%;
+    min-width: 1050px;
     height: 300px;
 }
 .skill-area{
     float: left;
-    width: 500px;
+    width: 33.333333333%;
     height: 450px;
     
 }
@@ -238,7 +240,7 @@ ul {
 }
 
 #project{
-    width: 100%;
+    min-width: 1050px;
     height: 722px;
     border-bottom:1px solid black ;
     background-color:white;  
@@ -253,6 +255,7 @@ ul {
     font-size: 40px;
 }
 .project-content{
+    min-width: 1050px;
     margin: 0 140px;
     text-align: center;
 }
