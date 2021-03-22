@@ -29,6 +29,12 @@ function skill_height(){
     document.querySelector("#skill").style.height =
     content_hei+"px"
 }
+function project_height(){
+    const content_hei = innerHeight;
+    document.querySelector("#project",).style.height =
+    content_hei+"px"
+}
 about_me_height();
 content_height();
 skill_height();
+project_height();

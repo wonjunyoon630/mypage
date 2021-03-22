@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Do Hyeon', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
@@ -100,12 +103,11 @@ ul {
     height: 100%;
     background: url(./img/저녁이미지.jpg);
     background-repeat: no-repeat;
-    background-size:1519px 754px;
+    background-size:100% 100% ;
     position: relative;
 }
 .main-title{
     color: #fff;
-    ;
     text-align: center;
     line-height: 7;   
 }
@@ -138,20 +140,23 @@ ul {
 }
 .about-me-left{
     border-right: 1px solid black;
-    width:480px;;
+    width:480px;
+    height: 100%;
 }
 .skill-title{
     padding-top: 70px;
     padding-bottom: 50px;
     margin:0;
     text-align: center;
+    width: 100%;
+    height: 120px;
 }
 .about-me-content{
-    margin:50px 100px 50px 100px;
+    margin:0 auto;
     border: 1px solid black;
     border-radius: 20px;
     padding: 20px 300px 0px 20px; 
-    width: 50%;
+    width: 80%;
     height: 200px;
 }
 
@@ -223,7 +228,6 @@ ul {
 .skill-area{
     float: left;
     width: 33.333333333%;
-    height: 450px;
     
 }
 .skill-content .skill-area img{
@@ -238,43 +242,36 @@ ul {
     padding: 55px;
     font-size: 40px;
 }
-
 #project{
     min-width: 1050px;
     height: 722px;
-    border-bottom:1px solid black ;
-    background-color:white;  
 }
 .project-title{
-    width: 100%;
-    height: 90px;
+    min-width: 1050px;
     text-align: center;
-    padding: 50px 0 10px 0;
+    line-height: 5;
 }
 .project-font{
+    display: inline-block;
+    width: 100%;
     font-size: 40px;
 }
 .project-content{
-    min-width: 1050px;
-    margin: 0 140px;
+    min-width:  1050px;
+}
+.project-content-img{
+    width: 33%;
+    display: inline-block;
     text-align: center;
+    padding: 0px 150px;
+    margin: 20px 0;
 }
-.project-content div{
-    width: 26%;
-    height:40%;
+.project-content-img img{
+    width: 320px;
+    height: 240px;
+}
+.project-content-img span{
+    width: 100px;
+    height: 25px;
     display: inline-block;
-    border: 1px solid #ddd;;
-    margin: 20px 40px;
-    
-}
-.project-content div img{
-    width: 94%;
-    height: auto;
-   padding: 10px;
-}
-.project-content div span{
-    width: 100%;
-    display: inline-block;
-    background-color: #455c82;
-    padding: 2px;
 }
