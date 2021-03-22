@@ -109,7 +109,7 @@ ul {
 .main-title{
     color: #fff;
     text-align: center;
-    line-height: 7;   
+    line-height: 8;   
 }
 .title-font{
     font-size: 80px;
@@ -144,12 +144,9 @@ ul {
     height: 100%;
 }
 .skill-title{
-    padding-top: 70px;
-    padding-bottom: 50px;
-    margin:0;
     text-align: center;
     width: 100%;
-    height: 120px;
+    line-height: 4;
 }
 .about-me-content{
     margin:0 auto;
@@ -211,19 +208,17 @@ ul {
 
 .about-me-idc{
     width: 376px;
-    height: 100%;
-    font-size: 21px;
-    padding: 0px 50px;
+    font-size: 18px;
+    padding: 0px 32px;
 }
 .about-me-idc span{
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
 }
 .skill-content{
     text-align: center;
-    margin-top: 100px;
     min-width: 1050px;
-    height: 300px;
+    overflow: auto;
 }
 .skill-area{
     float: left;
@@ -260,18 +255,21 @@ ul {
     min-width:  1050px;
 }
 .project-content-img{
-    width: 33%;
+    width: 500px;
     display: inline-block;
     text-align: center;
     padding: 0px 150px;
     margin: 20px 0;
 }
 .project-content-img img{
-    width: 320px;
-    height: 240px;
+    width:100%;
+    height:100%;
 }
 .project-content-img span{
     width: 100px;
     height: 25px;
     display: inline-block;
+}
+.project-content-area{
+    min-width: 1050px;
 }
